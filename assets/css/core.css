@@ -1,0 +1,195 @@
+/* 
+    Document   : core
+    Created on : Aug 22, 2013, 9:48:43 AM
+    Author     : designstudio_2
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+@import url('reset.css');
+
+
+
+/*STYLING FOR MOBILE*/
+
+
+/*Styling for the wrapper that sits over the body of the page*/
+#wrapper{
+    font: 1em sans-serif;
+    max-width: 30em;
+    margin: 0 auto;
+    line-height: 1.25em;
+  
+}
+
+
+/*Styling for Headings and Header*/
+h1,h2,h3{
+    background: #999;
+    padding: 1em;
+    font-weight: bold;
+    font-size: 1.5em;
+}
+
+.mainheader{
+    margin: 1em 0;
+}
+
+.mainheader img{
+    width: 55%;
+    height: 45%;
+}
+
+.topnav ul{
+    margin: 0;
+}
+
+.topnav li{
+    width: 100%;
+    text-align: center;
+    margin: 0.25em 0;
+}
+
+.topnav li a{
+    display: block;
+    background-color: #F03;
+    color: #FFF;
+    text-decoration: none;
+    padding: 0.75em 0;
+    outline: solid 1px #000;
+}
+
+.borderradius .topnav li a{
+    -moz-border-radius: 0.20em;
+    -webkit-border-radius: 0.20em;
+    -o-border-radius: 0.20em;
+    -ms-border-radius: 0.20em;
+    border-radius: 0.20em;
+    outline: none;
+}
+
+
+
+.topnav a:hover{
+    background: #666;
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+/*Styling for content of page*/
+.maincontent{
+    padding: 1em;
+    text-align: justify;
+}
+
+.topsection,.bottomsection{
+    background-color: #FFF;
+}
+
+
+
+/*Styling for Footer*/
+
+.mainfooter{
+    display: block;
+    text-align: center;
+    clear: both;
+}
+
+
+
+/*STYLING FOR TABLETS*/
+@media only screen and (min-width: 31em){
+    
+    
+/*Styling for the wrapper that sits over the body of the page*/
+#wrapper{
+    max-width: 46em;
+    padding: 0 1em;
+}
+
+/*Styling for Headings and Header*/
+.topnav ul{
+    height: 8em;
+    margin: 1em 0;
+}
+
+.topnav li{
+    width: 45%;
+    float: left;
+    margin: 0.25em 2.5%;
+}
+
+.topnav li#lastnav{
+   
+   width: 45%;
+   margin: 0.25em 25%;
+}
+
+}
+
+
+
+/*STYLING FOR DESKTOP*/
+@media only screen and (min-width: 48em){
+    
+    
+/*Styling for the wrapper that sits over the body of the page*/
+#wrapper{
+    max-width: 58em;
+    padding: 1em 0;
+}
+
+/*Styling for Headings and Header*/
+.topnav ul{
+    height: 2.5em;
+}
+
+.topnav li{
+    width: 15%;
+}
+
+.topnav li#lastnav{
+    width: 15%;
+    margin: 0 2.5%;
+}
+
+.maincontent{
+    display: table;
+    width: 70%;
+    float: left;
+}
+
+.topsection,.bottomsection{
+    width: 40%;
+    display: table-cell;
+    padding: 1em 5%;
+    outline: solid 1px #666;
+}
+
+.sidebar{
+    width: 21%;
+    float: left;
+    background-color: #FFF;
+    padding: 5% 2%;
+    margin-top: 1em;
+ 
+}
+
+.borderradius .sidebar{
+    -moz-border-radius: 1em;
+    -webkit-border-radius: 1em;
+    -o-border-radius: 1em;
+    -ms-border-radius: 1em;
+    border-radius: 1em;
+    outline: none;
+}
+
+}
+
+.topsidebar,.bottomsidebar{
+    margin-bottom: 2%;
+    background-color: #0077b3;
+}
+
+
