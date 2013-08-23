@@ -56,7 +56,7 @@
               </section>
       </section>
       <section class="sidebar">
-          <h1>Featured Artists</h1>
+          <h1>Artists</h1>
           <aside class="topsidebar">
               <section>
                   <h2>Top Sidebar</h2>

@@ -36,8 +36,8 @@ h1,h2,h3{
 }
 
 .mainheader img{
-    width: 55%;
-    height: 45%;
+    width: 25%;
+    height: 35%;
 }
 
 .topnav ul{
@@ -170,7 +170,7 @@ h1,h2,h3{
 .sidebar{
     width: 21%;
     float: left;
-    background-color: #FFF;
+    background-color: #F0F;
     padding: 5% 2%;
     margin-top: 1em;
  
