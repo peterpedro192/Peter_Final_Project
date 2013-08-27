@@ -30,8 +30,19 @@
               <ul>
                   <li><a href="#">Home</a></li>
                   <li><a href="#">About</a></li>
-                  <li><a href="#">Events</a></li>
-                  <li><a href="#">Merchandise</a></li>
+                  <li><a href="#">Events</a>
+                      <ul>
+                          <li><a href="#">By Day</a></li>
+                          <li><a href="#">By Zone</a></li>
+                      </ul>
+                  </li>
+                  <li><a href="#">Merchandise</a>
+                       <ul>
+                          <li><a href="#">Shirts</a></li>
+                          <li><a href="#">Mugs</a></li>
+                          <li><a href="#">Hats</a>  </li>  
+                      </ul>
+                  </li>
                   <li id="lastnav"><a href="#">Contact Us</a></li>
               </ul>
           </nav>

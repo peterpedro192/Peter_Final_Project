@@ -39,23 +39,61 @@ h1,h2,h3{
     width: 12em;
     height: 16em;
     float: none;
+    margin-left: 4em;
+}
+
+
+.topnav{
+    display: block;
+    position: relative;
+    margin-bottom: 6em;
 }
 
 .topnav ul{
+    margin: 0px;
+    padding: 0px;
+}
+
+.topnav ul:after{
+    content: ".";
+    display: block;
+    height: 0px;
+    clear: both;
+    visibility: hidden;
+}
+
+
+.topnav ul ul{
+    position: absolute;
+    left: 0px;
+    width: 0px;
+    display: none;
+}
+
+
+.topnav ul ul li{
+  float:none;
+  
+}
+
+.topnav ul li:hover > ul{
+    display: block;
     
-    margin: 0;
 }
 
 .topnav li{
     width: 100%;
     text-align: center;
     margin: 0.25em 0;
+    position: relative;
+    list-style-type: none;
+    float: left;
 }
 
 .topnav li a{
     display: block;
     background-color: #F03;
-    color: #FFF;
+    color: #CCC;
     text-decoration: none;
     padding: 0.75em 0;
     outline: solid 1px #000;
@@ -130,6 +168,9 @@ h1,h2,h3{
 }
 
 /*Styling for Headings and Header*/
+
+
+
 .topnav ul{
     height: 8em;
     margin: 1em 0;
@@ -167,6 +208,7 @@ h1,h2,h3{
 /*Styling for Headings and Header*/
 .mainheader img{
     float: left;
+    margin-left: 0;
 }
 
 .topnav ul{
@@ -184,7 +226,7 @@ h1,h2,h3{
 
 .slideshow{
     display: block;
-    clear: right;
+ 
 }
 
 
