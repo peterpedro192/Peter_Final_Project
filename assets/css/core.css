@@ -36,8 +36,8 @@ h1,h2,h3{
 }
 
 .mainheader img{
-    width: 25%;
-    height: 35%;
+    width: 10em;
+    height: 16em;
 }
 
 .topnav ul{
@@ -87,6 +87,11 @@ h1,h2,h3{
 }
 
 
+.sidebar{
+    display: none;
+}
+
+
 
 /*Styling for Footer*/
 
@@ -130,6 +135,7 @@ h1,h2,h3{
 
 
 
+
 /*STYLING FOR DESKTOP*/
 @media only screen and (min-width: 48em){
     
@@ -170,9 +176,10 @@ h1,h2,h3{
 .sidebar{
     width: 21%;
     float: left;
-    background-color: #F0F;
+    background-color: #000;
     padding: 5% 2%;
     margin-top: 1em;
+    display: block;
  
 }
 
@@ -189,7 +196,16 @@ h1,h2,h3{
 
 .topsidebar,.bottomsidebar{
     margin-bottom: 2%;
-    background-color: #0077b3;
+    background-color: #CCC;
 }
+
+.topsidebar h2,.bottomsidebar h2{
+    background: #FFF;
+    font-weight: bold;
+    font-size: 1.25em;
+}
+
+
+
 
 

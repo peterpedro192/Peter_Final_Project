@@ -16,6 +16,16 @@
           
           <img src="assets/img/logo-by-itself.gif" alt="Brighton Comic Arts Festival Logo" />
           
+              <div class="slideshow">
+                <p>
+
+                    <img src="assets/img/Comic_Signing.jpg" alt="Comic Signing Event" />
+                    <img src="assets/img/Comic_Signing2.jpg" alt="Comic Signing Event2" />
+                    <img src="assets/img/Comic_Signing3.jpg" alt="Comic Signing Event3" />
+                    <img src="assets/img/Convention_Interior.jpg" alt="Convention Centre" />
+                </p>
+            </div>
+          
           <nav class="topnav">
               <ul>
                   <li><a href="#">Home</a></li>
@@ -56,7 +66,7 @@
               </section>
       </section>
       <section class="sidebar">
-          <h1>Artists</h1>
+          <h1>Artist Profiles</h1>
           <aside class="topsidebar">
               <section>
                   <h2>Top Sidebar</h2>
