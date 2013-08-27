@@ -36,11 +36,13 @@ h1,h2,h3{
 }
 
 .mainheader img{
-    width: 10em;
+    width: 12em;
     height: 16em;
+    float: none;
 }
 
 .topnav ul{
+    
     margin: 0;
 }
 
@@ -76,6 +78,7 @@ h1,h2,h3{
     font-weight: bold;
 }
 
+
 /*Styling for content of page*/
 .maincontent{
     padding: 1em;
@@ -88,9 +91,22 @@ h1,h2,h3{
 
 
 .sidebar{
+    width: 21%;
+    float: left;
+    background-color: #000;
+    padding: 5% 2%;
+    margin-top: 1em;
     display: none;
+ 
 }
 
+
+.slideshow{
+    width: 24em;
+    height: 18em;
+    margin-left: 20em;
+    display: none;   
+}
 
 
 /*Styling for Footer*/
@@ -131,6 +147,8 @@ h1,h2,h3{
    margin: 0.25em 25%;
 }
 
+
+
 }
 
 
@@ -147,6 +165,10 @@ h1,h2,h3{
 }
 
 /*Styling for Headings and Header*/
+.mainheader img{
+    float: left;
+}
+
 .topnav ul{
     height: 2.5em;
 }
@@ -160,6 +182,14 @@ h1,h2,h3{
     margin: 0 2.5%;
 }
 
+.slideshow{
+    display: block;
+    clear: right;
+}
+
+
+
+/*Styling for content of page*/
 .maincontent{
     display: table;
     width: 70%;
@@ -174,11 +204,6 @@ h1,h2,h3{
 }
 
 .sidebar{
-    width: 21%;
-    float: left;
-    background-color: #000;
-    padding: 5% 2%;
-    margin-top: 1em;
     display: block;
  
 }
@@ -192,7 +217,7 @@ h1,h2,h3{
     outline: none;
 }
 
-}
+
 
 .topsidebar,.bottomsidebar{
     margin-bottom: 2%;
@@ -203,6 +228,8 @@ h1,h2,h3{
     background: #FFF;
     font-weight: bold;
     font-size: 1.25em;
+}
+
 }
 
 

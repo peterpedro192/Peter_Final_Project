@@ -91,9 +91,28 @@
       
 
       
-      
-     
-    <script src="http://code.jquery.com/jquery.js"></script>
+    
+       <!-- jQuery Library first -->
+        <script src="assets/js/jquery/jquery-1.10.2.min.js"></script>
+        <!-- jQuery plug-in helper files -->
+        <script src="assets/js/plugins/jquery.cycle.all.js"></script>
+        <script src="assets/js/plugins//jquery.easing.1.3.js"></script>
+        <!-- jQuery Activation Script, the $ in front of something indicates we are using Jquery NOT Javascript -->
+        <script>
+            //short hand version is $(function() - so when document is ready perform a function
+            //similar to onload
+            $(document).ready(function(){
+                $('.slideshow p').cycle({
+                    fx: 'shuffle',
+                    timeout: 1000,
+                    easing: 'easeInOutBack',
+                    shuffle: {top:1, left: 350}
+                    
+                });
+                
+            })
+            
+        </script>
 
   </body>
 </html>
