@@ -44,9 +44,8 @@ h1,h2,h3{
 
 
 .topnav{
-    display: block;
-    position: relative;
     margin-bottom: 6em;
+    height: 8em;
 }
 
 .topnav ul{
@@ -54,49 +53,34 @@ h1,h2,h3{
     padding: 0px;
 }
 
-.topnav ul:after{
-    content: ".";
-    display: block;
-    height: 0px;
-    clear: both;
-    visibility: hidden;
-}
-
-
-.topnav ul ul{
-    position: absolute;
-    left: 0px;
-    width: 0px;
-    display: none;
-}
-
-
-.topnav ul ul li{
-  float:none;
-  
-}
-
-.topnav ul li:hover > ul{
-    display: block;
-    
-}
 
 .topnav li{
     width: 100%;
     text-align: center;
     margin: 0.25em 0;
-    position: relative;
     list-style-type: none;
     float: left;
 }
 
+.topnav li li{
+    float: none;
+    width: 100%;
+    margin: 0.25em 0;
+}
+
+
+
 .topnav li a{
     display: block;
     background-color: #F03;
-    color: #CCC;
+    color: #FFF;
     text-decoration: none;
     padding: 0.75em 0;
     outline: solid 1px #000;
+}
+
+.topnav li li a{
+    background-color: #df8505;
 }
 
 .borderradius .topnav li a{

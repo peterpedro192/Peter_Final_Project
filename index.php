@@ -31,13 +31,13 @@
                   <li><a href="#">Home</a></li>
                   <li><a href="#">About</a></li>
                   <li><a href="#">Events</a>
-                      <ul>
+                      <ul class="hidden">
                           <li><a href="#">By Day</a></li>
                           <li><a href="#">By Zone</a></li>
                       </ul>
                   </li>
                   <li><a href="#">Merchandise</a>
-                       <ul>
+                       <ul class="hidden">
                           <li><a href="#">Shirts</a></li>
                           <li><a href="#">Mugs</a></li>
                           <li><a href="#">Hats</a>  </li>  
@@ -119,6 +119,12 @@
                     easing: 'easeInOutBack',
                     shuffle: {top:1, left: 350}
                     
+                });
+                
+                $('ul.hidden').hide(); 
+                
+                $('li a').hover(function(){
+                    $(this).next().stop().fadeToggle(3000);
                 });
                 
             })
