@@ -16,7 +16,7 @@
         <form action="http://www.webdesignstudents.co.uk/students/response.php" method="get" id="contactForm">
             <fieldset>
                 <legend>Personal Information</legend>
-            <table>
+            <table class="contactTable">
                 <!--Personal Information-->
                 <tr>
                     <td>
