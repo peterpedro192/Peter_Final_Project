@@ -1,52 +1,8 @@
-<!DOCTYPE html>
-<html lang="en">
-    
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Brighton Comic Arts Festival</title>
-    <link rel="stylesheet" href="assets/css/core.css" type="text/css" />
-    <script src="assets/js/modernizr.min.js"></script>
-  </head>
-  
-  
-  <body>
-  <div id="wrapper">
-      <header class="mainheader">
-          
-          <img src="assets/img/logo-by-itself.gif" alt="Brighton Comic Arts Festival Logo" />
-          
-              <div class="slideshow">
-                <p>
+    <?php include('assets/includes/head.inc');?>
 
-                    <img src="assets/img/Comic_Signing.jpg" alt="Comic Signing Event" />
-                    <img src="assets/img/Comic_Signing2.jpg" alt="Comic Signing Event2" />
-                    <img src="assets/img/Comic_Signing3.jpg" alt="Comic Signing Event3" />
-                    <img src="assets/img/Convention_Interior.jpg" alt="Convention Centre" />
-                </p>
-            </div>
-          
-          <nav class="topnav">
-              <ul>
-                  <li><a href="#">Home</a></li>
-                  <li><a href="#">About</a></li>
-                  <li><a href="#">Events</a>
-                      <ul class="hidden">
-                          <li><a href="#">By Day</a></li>
-                          <li><a href="#">By Zone</a></li>
-                      </ul>
-                  </li>
-                  <li><a href="#">Merchandise</a>
-                       <ul class="hidden">
-                          <li><a href="#">Shirts</a></li>
-                          <li><a href="#">Mugs</a></li>
-                          <li><a href="#">Hats</a>  </li>  
-                      </ul>
-                  </li>
-                  <li id="lastnav"><a href="#">Contact Us</a></li>
-              </ul>
-          </nav>
-      </header>
+    <title>Brighton Comic Arts Festival</title>
+    
+    <?php include('assets/includes/header.inc');?>
       
       <section class="maincontent">
               <section class="topsection">
@@ -77,25 +33,25 @@
               </section>
       </section>
       <section class="sidebar">
-          <h1>Artist Profiles</h1>
+          <h1>Artist Profile</h1>
           <aside class="topsidebar">
               <section>
-                  <h2>Top Sidebar</h2>
+                  <h2>Stan Lee</h2>
+                  <img src="assets/img/Stan_Lee.jpg" alt="Comics Writer Stan Lee" />
                   <p>tempor. Aenean placerat consectetur ullamcorper.</p>
               </section>
           </aside>
           <aside class="bottomsidebar">
               <section>
-                  <h2>Bottom Sidebar</h2>
+                  <h2>Geoff Johns</h2>
+                  <img src="assets/img/Geoff_Johns.jpg" alt="Comics Writer Geoff Johns" />
                   <p>tempor. Aenean placerat consectetur ullamcorper.</p>
               </section>
           </aside>
       </section>
       
       
-      <footer class="mainfooter">
-          <p>Copyright &copy; <a href="#" title="Peter Clarke Designs">PeterClarkeDesigns.com</a></p>
-      </footer>
+     <?php include('assets/includes/foot.inc');?> 
       
 
   </div>
@@ -108,10 +64,8 @@
         <!-- jQuery plug-in helper files -->
         <script src="assets/js/plugins/jquery.cycle.all.js"></script>
         <script src="assets/js/plugins//jquery.easing.1.3.js"></script>
-        <!-- jQuery Activation Script, the $ in front of something indicates we are using Jquery NOT Javascript -->
+        <!-- jQuery Activation Script -->
         <script>
-            //short hand version is $(function() - so when document is ready perform a function
-            //similar to onload
             $(document).ready(function(){
                 $('.slideshow p').cycle({
                     fx: 'shuffle',
@@ -121,13 +75,18 @@
                     
                 });
                 
-                $('ul.hidden').hide(); 
+                $('li.dropmenu ul').hide();
                 
-                $('li a').hover(function(){
-                    $(this).next().stop().fadeToggle(3000);
-                });
-                
-            })
+                $('li.dropmenu').hover(
+                    function()
+                        {
+                            $(this).find('ul').fadeIn();
+                        },
+                    function()
+                        {
+                            $('li.dropmenu ul').hide();
+                        });           
+            });
             
         </script>
 

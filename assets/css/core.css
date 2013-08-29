@@ -19,13 +19,16 @@
     max-width: 30em;
     margin: 0 auto;
     line-height: 1.25em;
+    background-color: rgba(255,255,204,0.3);
+
+    
   
 }
 
 
 /*Styling for Headings and Header*/
 h1,h2,h3{
-    background: #999;
+    background-color: #999;
     padding: 1em;
     font-weight: bold;
     font-size: 1.5em;
@@ -35,9 +38,9 @@ h1,h2,h3{
     margin: 1em 0;
 }
 
-.mainheader img{
-    width: 12em;
-    height: 16em;
+img.logo{
+    width: 14em;
+    height: 18em;
     float: none;
     margin-left: 4em;
 }
@@ -45,7 +48,7 @@ h1,h2,h3{
 
 .topnav{
     margin-bottom: 6em;
-    height: 8em;
+    height: 16em;
 }
 
 .topnav ul{
@@ -101,34 +104,72 @@ h1,h2,h3{
 }
 
 
+
+.slideshow{
+    width: 24em;
+    height: 18em;
+    margin-left: 16em;
+    display: none;   
+}
+
+div.slideshow p img{
+    width: 22em;
+    height: 17em;
+}
+
+
 /*Styling for content of page*/
 .maincontent{
     padding: 1em;
     text-align: justify;
+    margin-bottom: 5em;
 }
 
 .topsection,.bottomsection{
     background-color: #FFF;
+
 }
 
+.sectionheader, .sectionfoot{
+    margin: 1em 0 1em 0;
+}
 
 .sidebar{
     width: 21%;
     float: left;
     background-color: #000;
     padding: 5% 2%;
-    margin-top: 1em;
+    margin: 1em 0 5em 0;
     display: none;
  
 }
 
 
-.slideshow{
-    width: 24em;
-    height: 18em;
-    margin-left: 20em;
-    display: none;   
+.borderradius .sidebar{
+    -moz-border-radius: 1em;
+    -webkit-border-radius: 1em;
+    -o-border-radius: 1em;
+    -ms-border-radius: 1em;
+    border-radius: 1em;
+    outline: none;
 }
+
+
+
+.topsidebar,.bottomsidebar{
+    margin-bottom: 2%;
+    background-color: #CCC;
+    text-align: center;
+}
+
+.topsidebar h2,.bottomsidebar h2{
+    background: #FFF;
+    font-weight: bold;
+    font-size: 1.25em;
+    text-align: center;
+    margin: 1em 0 1em 0;
+}
+
 
 
 /*Styling for Footer*/
@@ -137,6 +178,8 @@ h1,h2,h3{
     display: block;
     text-align: center;
     clear: both;
+    background-color: #CCC;
+    padding: 1em 0;
 }
 
 
@@ -154,11 +197,11 @@ h1,h2,h3{
 /*Styling for Headings and Header*/
 
 
-
-.topnav ul{
-    height: 8em;
-    margin: 1em 0;
+.topnav{
+    height: 9.5em;
+    margin-bottom: 7em;
 }
+
 
 .topnav li{
     width: 45%;
@@ -170,6 +213,7 @@ h1,h2,h3{
    
    width: 45%;
    margin: 0.25em 25%;
+   padding-top: 0.25em;
 }
 
 
@@ -190,14 +234,17 @@ h1,h2,h3{
 }
 
 /*Styling for Headings and Header*/
-.mainheader img{
+img.logo{
     float: left;
     margin-left: 0;
 }
 
-.topnav ul{
-    height: 2.5em;
+
+.topnav{
+    height: 3em;
 }
+
+
 
 .topnav li{
     width: 15%;
@@ -234,27 +281,6 @@ h1,h2,h3{
  
 }
 
-.borderradius .sidebar{
-    -moz-border-radius: 1em;
-    -webkit-border-radius: 1em;
-    -o-border-radius: 1em;
-    -ms-border-radius: 1em;
-    border-radius: 1em;
-    outline: none;
-}
-
-
-
-.topsidebar,.bottomsidebar{
-    margin-bottom: 2%;
-    background-color: #CCC;
-}
-
-.topsidebar h2,.bottomsidebar h2{
-    background: #FFF;
-    font-weight: bold;
-    font-size: 1.25em;
-}
 
 }
 
