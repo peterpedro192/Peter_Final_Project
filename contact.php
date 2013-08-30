@@ -6,86 +6,78 @@
       
       <section class="maincontent">
               
-            <!-- Html form start -->
-        <!-- Using 'get' method the info from form is sent in url (can be seen), with 'post' it is sent back to server
-                in the http request (unseen) - both are NOT secure. Can use hash # in action so it remains on web page when
-            you sumbit (for practice) or send to php Paul created so you can see a response when form submitted
-           <form action="http://www.webdesignstudents.co.uk/students/response.php" method="get" id="contactForm"> - this sends it
-            to the server Paul set up which gives a response using the info we provided int the form
-        -->
-        <form action="http://www.webdesignstudents.co.uk/students/response.php" method="get" id="contactForm">
-            <fieldset>
-                <legend>Personal Information</legend>
-            <table class="contactTable">
+    
+        <form action="http://www.webdesignstudents.co.uk/students/response.php" method="get" class="contact_form" id="contactForm">
+            <fieldset class="contact">
+                <legend class="legend_heading">Personal Information</legend>
+                <br>
+            <table>
                 <!--Personal Information-->
-                <tr>
+                <tr class="tablerow">
                     <td>
-                        <label for="cname">Name</label>
+                        <label for="cname">Name:</label>
                     </td>
-                    <td><!-- name was the older of identifying input name but now we use ids because we use jquery to 
-                        validate it, id must be unique but name does not have to be. The names are the value that is actually
-                        sent, the ids are used by Jquery to validate the form before it is submitted
-                            The title appears from Jquery Validation if the user doesn't put in required info-->
-                        <input type="text" name="cname" id="cname" value="" size="30" required placeholder="Please enter Name" title="Enter your name please" //>
+                    <td>
+                        <input type="text" name="cname" id="cname" value="" size="30" required placeholder="Please enter Name" title="Enter your name please" />
                     </td>
                 </tr>
-                <tr>
+                <tr class="tablerow">
                     <td>
-                        <label for="cemail">Email</label>
+                        <label for="cemail">Email:</label>
                     </td>
                     <td>
-                        <input type="email" name="cemail" id="cemail" value="" size="30" required placeholder="Please enter Email" />
+                        <input type="email" name="cemail" id="cemail" value="" size="30" required placeholder="Please enter Email" title="Enter your email address please" />
                     </td>
                 </tr>
-                <tr>
+                <tr class="tablerow">
                     <td>
-                        <label for="clocation">Location</label>
+                        <label for="clocation">Location:</label>
                     </td>
                     <td>
-                        <select name="clocation" id="clocation">
+                        <select name="clocation" id="clocation" title="Select your location please">
                             <option value="" selected>Please Select</option>
                             <option value="Brighton">Brighton</option>
                             <option value="Hove">Hove</option>
-                            <option value="London">London</option>
+                            <option value="London">Other</option>
                         </select>
                     </td>
                 </tr>
-                <tr>
+                <tr class="tablerow">
                     <td>
                         <label>Gender:</label>
                     </td>
                     <td>
-                        <label>Male<input type="radio" name="cgender" id="cgenderm" value="Male" checked /></label>
+                        <label>Male<input type="radio" name="cgender" id="cgenderm" value="Male" checked title="Select your gender please" /></label>
                         <label>Female<input type="radio" name="cgender" id="cgenderf" value="Male" /></label>
                     </td>
                 </tr>
             </table>
             </fieldset>
                 
-            <fieldset>
-                <legend>Enquiry</legend>
+            <fieldset class="contact">
+                <legend class="legend_heading">Enquiry</legend>
+                <br>
                 <table>
                     <!--Gerneral Information-->
-                <tr>
+                <tr class="tablerow">
                     <td>
                         <label>Preferred Contact Method:</label> 
                     </td>
                     <td>
-                        <label>Email<input type="checkbox" name="emailpref" id="prefe" value="Yes" checked/></label>
-                        <label>Telephone<input type="checkbox" name="phonepref" id="preft" value="Yes" /></label>
-                        <label>SMS/Mobile<input type="checkbox" name="mobilepref" id="prefm" value="Yes" /></label>         
+                        <label>Email<input type="checkbox" name="emailpref" id="prefe" value="Yes" checked title="Select your preferred method of contact please" /></label>
+                        <label>Call<input type="checkbox" name="phonepref" id="preft" value="Yes" /></label>
+                        <label>Text<input type="checkbox" name="textpref" id="prefm" value="Yes" /></label>         
                     </td>
                 </tr>
-                <tr>
-                    <td>
-                        <label for="comment">Comment</label>
+                <tr class="tablerow">
+                    <td id="comment_label">
+                        <label for="comment">Comment:</label>
                     </td>
-                    <td>
-                        <textarea name="comment" id="comment" cols="24" rows="8" required placeholder="Please enter Comments"></textarea>
+                    <td id="comment_box">
+                        <textarea name="comment" id="comment" cols="25" rows="12" required placeholder="Please enter Comments" title="Enter your comment please"></textarea>
                     </td>
                 </tr>
-                <!--this creates an ordered list that houses the error messages generated from jquery if the required 
-                    info is not provided -->
+                
                 <tr>
                     <td colspan="2">
                         <div class="errors">
@@ -98,7 +90,7 @@
                         &nbsp;
                     </td>
                     <td>
-                        <input type="submit" name="submit" value="Send Form" />
+                        <input class="submit_button" type="submit" name="submit" value="Send Form" title="Submit form please"/>
                     </td>
                 </tr>
                 
@@ -150,6 +142,8 @@
                             $('li.dropmenu ul').hide();
                         }); 
                         
+                        
+                        
                         $('#contactForm').validate({
                      rules:{
                          cname: "required",
@@ -168,10 +162,10 @@
                      },
                      
                      messages:{
-                         cname:"I said, name please!",
+                         cname:"Enter you name please",
                          cemail:{
-                             required:"You must provide Email!",
-                             email:"No, one that actually works"
+                             required:"Enter your email address please",
+                             email:"Must be a valid email e.g. test@gmail.com"
                          }
                      },
                      errorContainer: ('#contactForm div.errors'),
