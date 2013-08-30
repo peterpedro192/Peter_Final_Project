@@ -1,6 +1,6 @@
     <?php include('assets/includes/head.inc');?>
 
-    <title>Brighton Comic Arts Festival</title>
+    <title>Brighton Comic Arts Festival Contact Page</title>
     
     <?php include('assets/includes/header.inc');?>
       

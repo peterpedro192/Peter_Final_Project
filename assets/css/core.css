@@ -19,7 +19,7 @@
     max-width: 30em;
     margin: 0 auto;
     line-height: 1.25em;
-    background-color: rgba(255,255,204,0.3);
+    background-color: #FFF;
 
     
   
@@ -104,7 +104,6 @@ img.logo{
 }
 
 
-
 .slideshow{
     width: 24em;
     height: 18em;
@@ -177,7 +176,6 @@ div.slideshow p img{
 
 /*Styling for Form*/
 .contact_form{
-    margin: 0 auto;
     padding: 3em;
     background-color: #999;
 }
@@ -205,6 +203,7 @@ div.slideshow p img{
 .errors{
     color: #F00;
     background-color: #FFF;
+    text-align: center;
 }
 
 .tablerow td{

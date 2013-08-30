@@ -1,6 +1,6 @@
-    <?php include('assets/includes/head.inc');?>
+<?php include('assets/includes/head.inc');?>
 
-    <title>Brighton Comic Arts Festival Home Page</title>
+    <title>Brighton Comic Arts Festival About Page</title>
     
     <?php include('assets/includes/header.inc');?>
       
@@ -92,3 +92,4 @@
 
   </body>
 </html>
+
