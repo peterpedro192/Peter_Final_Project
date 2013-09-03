@@ -2,6 +2,27 @@
 
     <title>Brighton Comic Arts Festival Home Page</title>
     
+    <style>
+        @media only screen and (min-width: 48em){
+            .maincontent{
+                width: 70%;
+
+            }
+
+            .topsection,.bottomsection{
+                width: 40%;
+                display: table-cell;
+                padding: 1em 5%;
+                outline: solid 1px #666;
+            }
+
+            .sidebar{
+                display: block;
+
+            }
+        }
+    </style>
+    
     <?php include('assets/includes/header.inc');?>
       
       <section class="maincontent">
@@ -37,14 +58,14 @@
           <aside class="topsidebar">
               <section>
                   <h2>Stan Lee</h2>
-                  <img src="assets/img/Stan_Lee.jpg" alt="Comics Writer Stan Lee" />
+                  <img src="assets/media/img/Stan_Lee.jpg" alt="Comics Writer Stan Lee" />
                   <p>tempor. Aenean placerat consectetur ullamcorper.</p>
               </section>
           </aside>
           <aside class="bottomsidebar">
               <section>
                   <h2>Geoff Johns</h2>
-                  <img src="assets/img/Geoff_Johns.jpg" alt="Comics Writer Geoff Johns" />
+                  <img src="assets/media/img/Geoff_Johns.jpg" alt="Comics Writer Geoff Johns" />
                   <p>tempor. Aenean placerat consectetur ullamcorper.</p>
               </section>
           </aside>

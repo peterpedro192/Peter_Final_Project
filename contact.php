@@ -1,17 +1,104 @@
     <?php include('assets/includes/head.inc');?>
 
     <title>Brighton Comic Arts Festival Contact Page</title>
-    
+    <style>
+
+        /*Styling for Form - Mobile First*/
+        .contact_form{
+            padding: 1em;
+            background-color: #999;
+            width: 23em;
+            margin: 0 auto;
+        }
+
+        .contact_table{
+            padding: 1em;
+            width: 18em;
+            margin: 0 auto
+        }
+
+
+        .borderradius .contact_form{
+            -moz-border-radius: 1em;
+            -webkit-border-radius: 1em;
+            -o-border-radius: 1em;
+            -ms-border-radius: 1em;
+            border-radius: 1em;
+            outline: none;
+        }
+
+        .legend_heading{
+            text-align: center;
+            font-size: 1.5em;
+            color: #FFF;
+            padding: 1em 0;
+        }
+
+        .errors{
+            color: #F00;
+            background-color: #FFF;
+            text-align: center;
+        }
+
+        .tablerow td{
+            padding-right: 0.5em;
+        }
+
+
+        .submit_button{
+            color: #FFF;
+            padding: 0.5em;
+            background-color: #000;
+            font-size: 1em;
+        }
+
+        .borderradius .submit_button{
+            -moz-border-radius: 1em;
+            -webkit-border-radius: 1em;
+            -o-border-radius: 1em;
+            -ms-border-radius: 1em;
+            border-radius: 1em;
+            outline: none;
+        }
+
+        td#comment_label{
+            text-align: center;
+            vertical-align: middle;
+        }
+
+        td#comment_box{
+            padding: 2em 5em 2em 0;
+        }
+        
+        /*STYLING FOR TABLETS*/
+        @media only screen and (min-width: 31em){
+            .contact_form{
+                width: 25em;
+            }
+            .contact_table{
+                width: 20em;
+            }
+        }
+        /*STYLING FOR DESKTOPS*/
+        @media only screen and (min-width: 48em){
+            .contact_form{
+                width: 30em;
+            }
+            .contact_table{
+                width: 25em;
+            }
+        }
+    </style>
     <?php include('assets/includes/header.inc');?>
       
       <section class="maincontent">
               
     
         <form action="http://www.webdesignstudents.co.uk/students/response.php" method="get" class="contact_form" id="contactForm">
-            <fieldset class="contact">
+            <fieldset>
                 <legend class="legend_heading">Personal Information</legend>
                 <br>
-            <table>
+            <table class="contact_table">
                 <!--Personal Information-->
                 <tr class="tablerow">
                     <td>
@@ -54,14 +141,14 @@
             </table>
             </fieldset>
                 
-            <fieldset class="contact">
+            <fieldset>
                 <legend class="legend_heading">Enquiry</legend>
                 <br>
-                <table>
+                <table class="contact_table">
                     <!--Gerneral Information-->
                 <tr class="tablerow">
                     <td>
-                        <label>Preferred Contact Method:</label> 
+                        <label>Contact You By:</label> 
                     </td>
                     <td>
                         <label>Email<input type="checkbox" name="emailpref" id="prefe" value="Yes" checked title="Select your preferred method of contact please" /></label>
