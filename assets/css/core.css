@@ -19,7 +19,7 @@
     max-width: 30em;
     margin: 0 auto;
     line-height: 1.25em;
-    background-color: #FFF;
+    background-color: #Fff;
 
     
   
@@ -121,54 +121,18 @@ div.slideshow p img{
 .maincontent{
     padding: 1em 0 1em 0;
     text-align: justify;
-    margin: 0 1em 5em 1em;
+    margin: 0 0 5em 0;
 }
 
 /*Styling for sections*/
 .topsection,.bottomsection{
     background-color: #FFF;
+    display: block;
+    padding: 1em;
 
 }
 
 .sectionheader, .sectionfoot{
-    margin: 1em 0 1em 0;
-}
-
-/*Styling for sidebar*/
-
-.sidebar{
-    width: 21%;
-    float: left;
-    background-color: #000;
-    padding: 5% 2%;
-    margin: 1em 0 5em 0;
-    display: none;
- 
-}
-
-
-.borderradius .sidebar{
-    -moz-border-radius: 1em;
-    -webkit-border-radius: 1em;
-    -o-border-radius: 1em;
-    -ms-border-radius: 1em;
-    border-radius: 1em;
-    outline: none;
-}
-
-
-
-.topsidebar,.bottomsidebar{
-    margin-bottom: 2%;
-    background-color: #CCC;
-    text-align: center;
-}
-
-.topsidebar h2,.bottomsidebar h2{
-    background: #FFF;
-    font-weight: bold;
-    font-size: 1.25em;
-    text-align: center;
     margin: 1em 0 1em 0;
 }
 
@@ -301,7 +265,7 @@ img.logo{
     width: 30%;
     display: table-cell;
     padding: 1em 2.5%;
-    outline: solid 1px #666;
+    outline: solid 3px #666;
 }
 
 .bottomsection{

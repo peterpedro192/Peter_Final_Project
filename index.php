@@ -6,6 +6,7 @@
         @media only screen and (min-width: 48em){
             .maincontent{
                 width: 70%;
+                margin-right: 2em
 
             }
 
@@ -16,11 +17,44 @@
                 outline: solid 1px #666;
             }
 
-            .sidebar{
-                display: block;
+            /*Styling for sidebar*/
 
-            }
+        .sidebar{
+            width: 21%;
+            float: left;
+            background-color: #000;
+            padding: 5% 2%;
+            margin: 1em 0 5em 0;
+            display: block;
+
         }
+
+
+        .borderradius .sidebar{
+            -moz-border-radius: 1em;
+            -webkit-border-radius: 1em;
+            -o-border-radius: 1em;
+            -ms-border-radius: 1em;
+            border-radius: 1em;
+            outline: none;
+        }
+
+
+
+        .topsidebar,.bottomsidebar{
+            margin-bottom: 2%;
+            background-color: #CCC;
+            text-align: center;
+        }
+
+        .topsidebar h2,.bottomsidebar h2{
+            background: #FFF;
+            font-weight: bold;
+            font-size: 1.25em;
+            text-align: center;
+            margin: 1em 0 1em 0;
+        }
+    }
     </style>
     
     <?php include('assets/includes/header.inc');?>
@@ -84,7 +118,7 @@
         <script src="assets/js/jquery/jquery-1.10.2.min.js"></script>
         <!-- jQuery plug-in helper files -->
         <script src="assets/js/plugins/jquery.cycle.all.js"></script>
-        <script src="assets/js/plugins//jquery.easing.1.3.js"></script>
+        <script src="assets/js/plugins/jquery.easing.1.3.js"></script>
         <!-- jQuery Activation Script -->
         <script>
             $(document).ready(function(){

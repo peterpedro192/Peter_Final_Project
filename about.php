@@ -5,6 +5,10 @@
         .about_video{
             width: 100%;
         }
+        
+        .topsection,.bottomsection{
+            outline: none;
+        }
     </style>
     
     <?php include('assets/includes/header.inc');?>
@@ -24,7 +28,7 @@
                           <source src="assets/media/video/aboutvideo.ogg" type='video/ogg' />    
                       </video>
                       <p class="flash_alternative">
-                          If you are unable to view video in your browserplease click <a href="media/video/aboutvideo.html" title="Flash Alternative">here.</a>
+                          If you are unable to view video in your browser please click <a href="assets/media/video/aboutvideo.html" title="Flash Alternative">here.</a>
                       </p>
                   </div>
               </section>
@@ -59,7 +63,7 @@ The festival will consist of several zones, wherein different events are held. T
         <script src="assets/js/jquery/jquery-1.10.2.min.js"></script>
         <!-- jQuery plug-in helper files -->
         <script src="assets/js/plugins/jquery.cycle.all.js"></script>
-        <script src="assets/js/plugins//jquery.easing.1.3.js"></script>
+        <script src="assets/js/plugins/jquery.easing.1.3.js"></script>
         <!-- jQuery Activation Script -->
         <script>
             $(document).ready(function(){
