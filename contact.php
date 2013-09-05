@@ -209,6 +209,7 @@
         <!-- jQuery Activation Script -->
         <script>
             $(document).ready(function(){
+                //Cycle Slideshow Plug In
                 $('.slideshow p').cycle({
                     fx: 'shuffle',
                     timeout: 1000,
@@ -216,7 +217,8 @@
                     shuffle: {top:1, left: 350}
                     
                 });
-                
+               
+               //Dropdown Menu
                 $('li.dropmenu ul').hide();
                 
                 $('li.dropmenu').hover(
@@ -230,36 +232,36 @@
                         }); 
                         
                         
-                        
-                        $('#contactForm').validate({
+                 //Contact Form Validation
+                    $('#contactForm').validate({
                      rules:{
-                         cname: "required",
-                         
-                        
-                      
-                            cemail:{
-                             required: "#prefe:checked",
-                             email: "#prefe:checked"
-                             },
-                 
-                      
-                
-                     clocation: "required",
-                     comment: "required",
-                     },
-                     
-                     messages:{
-                         cname:"Enter you name please",
-                         cemail:{
-                             required:"Enter your email address please",
-                             email:"Must be a valid email e.g. test@gmail.com"
-                         }
-                     },
-                     errorContainer: ('#contactForm div.errors'),
-                     errorLabelContainer: ('ol'),
-                     wrapper: ('li')
-                 });
-            });
+                     cname: "required",
+
+
+
+                        cemail:{
+                         required: "#prefe:checked",
+                         email: "#prefe:checked"
+                         },
+
+
+
+                 clocation: "required",
+                 comment: "required",
+                 },
+
+                 messages:{
+                     cname:"Enter you name please",
+                     cemail:{
+                         required:"Enter your email address please",
+                         email:"Must be a valid email e.g. test@gmail.com"
+                     }
+                 },
+                 errorContainer: ('#contactForm div.errors'),
+                 errorLabelContainer: ('ol'),
+                 wrapper: ('li')
+             });
+        });
             
         </script>
 

@@ -1,6 +1,7 @@
 <?php include('assets/includes/head.inc');?>
 
-    <title>Brighton Comic Arts Festival Events Page</title>
+    <title>Brighton Comic Arts Festival Events By Day Page</title>
+    <link href="assets/css/slimbox2/slimbox2.css" rel='stylesheet' />
     <style>
         
         .event_nav li{
@@ -69,22 +70,22 @@
                       <div class="event">
                           <div class="event_gallery">
                               <div class="hidden" id="friday_thumb">
-                                 <a href="assets/media/img/events/film_zone1.jpg" rel="lightbox-group" title="Film Zone - Showing of Elektora">
-                                 <img class="event_img" src="assets/media/img/events/thumbs/film_zone1_sml.jpg" alt="Events by Day Photo" /></a>
-                                 <a href="assets/media/img/events/kids_zone2.jpg" rel="lightbox-group" title="Film Zone - Showing of Elektora">
+                                 <a href="assets/media/img/events/film_zone1.jpg" rel="lightbox-group-friday" title="Film Zone - Screening of 'Elektora' -                                      July 7(Friday), 6pm">
+                                 <img class="event_img" src="assets/media/img/events/thumbs/film_zone1_sml.jpg" alt="Still of film 'Elektora'" /></a>
+                                 <a href="assets/media/img/events/kids_zone2.jpg" rel="lightbox-group-friday" title="Kids Zone - Mini Red Carpet                                               - July 7(Friday), 1pm">
                                  <img class="event_img" src="assets/media/img/events/thumbs/kids_zone2_sml.jpg" alt="Events by Day Photo" /></a>
                               </div>
                               <div class="hidden" id="saturday_thumb">
-                                 <a href="assets/media/img/events/film_zone2.jpg" rel="lightbox-group" title="Film Zone - Showing of Elektora">
-                                 <img class="event_img" src="assets/media/img/events/thumbs/film_zone2_sml.jpg" alt="Events by Day Photo" /></a>
-                                 <a href="assets/media/img/events/kids_zone1.jpg" rel="lightbox-group" title="Film Zone - Showing of Elektora">
-                                 <img class="event_img" src="assets/media/img/events/thumbs/kids_zone1_sml.jpg" alt="Events by Day Photo" /></a>
+                                 <a href="assets/media/img/events/film_zone2.jpg" rel="lightbox-group-saturday" title="Film Zone - Screening of 'Bombay Cycle'                                      - July 8(Saturday), 8pm">
+                                 <img class="event_img" src="assets/media/img/events/thumbs/film_zone2_sml.jpg" alt="Still of film 'Bombay Cycle'" /></a>
+                                 <a href="assets/media/img/events/kids_zone1.jpg" rel="lightbox-group-saturday" title="Kids Zone - Under 8 Drawing Competition                                      - July 8(Saturday), 3pm">
+                                 <img class="event_img" src="assets/media/img/events/thumbs/kids_zone1_sml.jpg" alt="Under 8 Drawing Competition" /></a>
                               </div>
                               <div class="hidden" id="sunday_thumb">
-                                 <a href="assets/media/img/events/kids_zone4.jpg" rel="lightbox-group" title="Film Zone - Showing of Elektora">
-                                 <img class="event_img" src="assets/media/img/events/thumbs/kids_zone4_sml.jpg" alt="Events by Day Photo" /></a>
-                                 <a href="assets/media/img/events/artist_zone1.jpg" rel="lightbox-group" title="Film Zone - Showing of Elektora">
-                                 <img class="event_img" src="assets/media/img/events/thumbs/artist_zone1_sml.jpg" alt="Events by Day Photo" /></a>
+                                 <a href="assets/media/img/events/kids_zone4.jpg" rel="lightbox-group-sunday" title="Kids Zone - Mini Masquerade                                                  - July 9(Sunday), 3pm">
+                                 <img class="event_img" src="assets/media/img/events/thumbs/kids_zone4_sml.jpg" alt="Mini Masquerade" /></a>
+                                 <a href="assets/media/img/events/artist_zone1.jpg" rel="lightbox-group-sunday" title="Artist Zone - Meet James Gowan,                                         Creator of 'Oxymoron' - July 9(Sunday), 1pm">
+                                 <img class="event_img" src="assets/media/img/events/thumbs/artist_zone1_sml.jpg" alt="James Gowan,                                                                Creator of 'Oxymoron'" /></a>
                               </div>
                           </div>
                       </div>
@@ -108,6 +109,7 @@
         <script src="assets/js/plugins/slimbox2.js"></script>
         <!-- jQuery Activation Script -->
         <script>
+            //Cycle Slideshow Plug In
             $(document).ready(function(){
                 $('.slideshow p').cycle({
                     fx: 'shuffle',
@@ -117,6 +119,7 @@
                     
                 });
                 
+              //Dropdown Menu
                 $('li.dropmenu ul').hide();
                 
                 $('li.dropmenu').hover(
@@ -129,7 +132,7 @@
                             $('li.dropmenu ul').hide();
                         }); 
                         
-                        
+                //Gallery - for use with Slimbox2 Plug In        
                   $('.event_gallery div.hidden').hide(); 
                   $('#friday_thumb').show();
                   $('#friday').click(function(){                       

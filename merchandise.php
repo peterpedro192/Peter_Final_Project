@@ -1,6 +1,6 @@
 <?php include('assets/includes/head.inc');?>
 
-    <title>Brighton Comic Arts Festival Events Page</title>
+    <title>Brighton Comic Arts Festival Merchandise Page</title>
     <style>
         
         p.event{
@@ -8,8 +8,8 @@
         }
         
         img.event_img{
-            width: 20em;
-            height: 15em;
+            width: 18em;
+            height: 18em;
         }
         
         @media only screen and (min-width: 48em){
@@ -24,30 +24,30 @@
       <section class="maincontent">
               <section class="topsection">
                   <header class="sectionheader">
-                      <h2><a href="events_day.php" title="Section post">Events by Day</a></h2>
+                      <h2><a href="merchandise_shirts.php" title="Section post">Shirts</a></h2>
                   </header>
                   <footer class="sectionfoot">
                       <p>This section written by Peter</p>
                   </footer>
                   <div class="sectioncontent">
                       <p class="event">
-                         <a href="events_day.php" title="Events by Day Photo">
-                         <img class="event_img" src="assets/media/img/events/main_zone3.jpg" alt="Events by Day Photo" /></a>
+                         <a href="merchandise_shirts.php" title="BCAF Shirts">
+                         <img class="event_img" src="assets/media/img/merchandise/shirts2.jpg" alt="BCAF Shirts" /></a>
                       </p>
                   </div>
               </section>
           
               <section class="bottomsection">
                   <header class="sectionheader">
-                      <h2><a href="events_zone.php" title="Section post">Events by Zone</a></h2>
+                      <h2><a href="merchandise_mugs.php" title="Section post">Mugs</a></h2>
                   </header>
                   <footer class="sectionfoot">
                       <p>This section written by Peter</p>
                   </footer>
                   <div class="sectioncontent">
                       <p class="event">
-                         <a href="events_zone.php" title="Events by Zone Photo">
-                         <img class="event_img" src="assets/media/img/events/kids_zone3.jpg" alt="Events by Zone Photo" /></a>
+                         <a href="merchandise_mugs.php" title="BCAF Mugs">
+                         <img class="event_img" src="assets/media/img/merchandise/Camping_Mug.jpg" alt="Silver BCAF Mug" /></a>
                       </p>
                   </div>
               </section>

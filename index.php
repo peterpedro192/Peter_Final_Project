@@ -122,6 +122,7 @@
         <!-- jQuery Activation Script -->
         <script>
             $(document).ready(function(){
+                //Cycle Slideshow Plug In
                 $('.slideshow p').cycle({
                     fx: 'shuffle',
                     timeout: 1000,
@@ -129,7 +130,8 @@
                     shuffle: {top:1, left: 350}
                     
                 });
-                
+               
+               //Dropdown Menu
                 $('li.dropmenu ul').hide();
                 
                 $('li.dropmenu').hover(
