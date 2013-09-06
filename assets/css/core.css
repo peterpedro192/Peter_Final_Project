@@ -137,6 +137,12 @@ div.slideshow p img{
 }
 
 
+/*Styling for sidebar*/
+
+.sidebar{
+    display: none;
+
+}
 
 
 /*Styling for Footer*/

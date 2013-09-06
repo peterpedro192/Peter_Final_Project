@@ -1,6 +1,7 @@
     <?php include('assets/includes/head.inc');?>
 
     <title>Brighton Comic Arts Festival Home Page</title>
+    <link rel="stylesheet" href="assets/css/ui-lightness/jquery-ui-1.10.3.custom.min.css" />
     
     <style>
         @media only screen and (min-width: 48em){
@@ -116,6 +117,7 @@
     
        <!-- jQuery Library first -->
         <script src="assets/js/jquery/jquery-1.10.2.min.js"></script>
+        <script src="assets/js/jquery/jquery-ui-1.10.3.custom.min.js"></script>
         <!-- jQuery plug-in helper files -->
         <script src="assets/js/plugins/jquery.cycle.all.js"></script>
         <script src="assets/js/plugins/jquery.easing.1.3.js"></script>
@@ -142,7 +144,21 @@
                     function()
                         {
                             $('li.dropmenu ul').hide();
-                        });           
+                        });  
+                        
+                        
+                //Accoridan Effect on Sections for mobile version
+             
+                 if($(this).width()<500){
+                     $('.sectioncontent:not(:first)').hide();
+                     $('.sectionheader h2 a').mouseover(function(){
+                         $('.sectioncontent').slideUp('slow');
+                         $(this).parent().parent().next().next().slideDown('slow');
+
+
+                     });
+                 }
+                 
             });
             
         </script>
