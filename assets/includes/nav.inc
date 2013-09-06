@@ -10,8 +10,8 @@
                   </li>
                   <li class="dropmenu"><a href="merchandise.php">Merchandise</a>
                        <ul>
-                          <li><a href="merc_shirts.php">Shirts</a></li>
-                          <li><a href="mer_hats.php">Hats</a>  </li>  
+                          <li><a href="merchandise_shirts.php">Shirts</a></li>
+                          <li><a href="merchandise_mugs.php">Mugs</a>  </li>  
                       </ul>
                   </li>
                   <li id="lastnav"><a href="contact.php">Contact Us</a></li>
