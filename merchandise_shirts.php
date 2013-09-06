@@ -84,11 +84,12 @@
                                             <li>Sizes: Large, Medium, Small</li>
                                             <li>100% Cotton</li>
                                             <li>Machine Washable</li>
+                                            <li>Price: £15</li>
                                         </ul>
                                     </div>
                                 </div>                             
                              <button id="opener">Details</button>
-                             <button>Add To Cart</button>
+                             <button id="shop_cart" onclick="alert('Shopping Cart Functionality To Be Added At Later Date')">Add To Cart</button>
                              <p>Grey BCAF shirt</p>
                              <img class="event_img" src="assets/media/img/merchandise/shirts4.jpg" alt="Grey BCAF shirt" /></a>                             
                              <button>Details</button>
@@ -185,7 +186,7 @@
                 });
                 
                 
-               $( "#dialog" ).dialog({ minWidth: 500 });
+               $( "#dialog" ).dialog({ minWidth: 400 });
                         
         });
             

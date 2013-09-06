@@ -84,11 +84,12 @@
                                             <li>Food-grade stainless steel</li>
                                             <li>200ml capacity</li>
                                             <li>Dishwasher Safe</li>
+                                            <li>Price: £10</li>
                                         </ul>
                                     </div>
                                 </div>                             
                              <button id="opener">Details</button>
-                             <button>Add To Cart</button>
+                             <button id="shop_cart" onclick="alert('Shopping Cart Functionality To Be Added At Later Date')">Add To Cart</button>
                         </div>
                   </div>
               </section>
@@ -151,7 +152,7 @@
                             $('li.dropmenu ul').hide();
                         }); 
                         
-                //Modal
+                //Modal for more details on merchandise
                    $( "#dialog" ).dialog({
                   autoOpen: false,
                   show: {
@@ -167,10 +168,8 @@
                 $( "#opener").click(function() {
                   $( "#dialog").dialog("open");
                 });
-                
-                
-               $( "#dialog" ).dialog({ minWidth: 500 });
-                        
+               $( "#dialog" ).dialog({ minWidth: 400 });
+                           
         });
             
         </script>
