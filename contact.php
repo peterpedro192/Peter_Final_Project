@@ -42,6 +42,8 @@
 
         .tablerow td{
             padding-right: 0.5em;
+            text-align: left;
+            vertical-align: middle;
         }
 
 
@@ -96,7 +98,7 @@
     
         <form action="http://www.webdesignstudents.co.uk/students/response.php" method="get" class="contact_form" id="contactForm">
             <fieldset>
-                <legend class="legend_heading">Personal Information</legend>
+                <legend class="legend_heading">PERSONAL INFORMATION</legend>
                 <br>
             <table class="contact_table">
                 <!--Personal Information-->
@@ -118,6 +120,14 @@
                 </tr>
                 <tr class="tablerow">
                     <td>
+                        <label for="cmobile">Mobile #:</label>
+                    </td>
+                    <td>
+                        <input type="text" name="cmobile" id="cmobile" value="" size="30" placeholder="Please enter Mobile #" title="Enter your mobile # please" />
+                    </td>
+                </tr>
+                <tr class="tablerow">
+                    <td>
                         <label for="clocation">Location:</label>
                     </td>
                     <td>
@@ -131,18 +141,26 @@
                 </tr>
                 <tr class="tablerow">
                     <td>
+                        <label for="cpostcode">Post Code:</label>
+                    </td>
+                    <td>
+                        <input type="text" name="cpostcode" id="cpostcode" value="" size="15" required placeholder="Enter post code" title="Enter your post code please" />
+                    </td>
+                </tr>
+                <tr class="tablerow">
+                    <td>
                         <label>Gender:</label>
                     </td>
                     <td>
                         <label>Male<input type="radio" name="cgender" id="cgenderm" value="Male" checked title="Select your gender please" /></label>
-                        <label>Female<input type="radio" name="cgender" id="cgenderf" value="Male" /></label>
+                        <label>Female<input type="radio" name="cgender" id="cgenderf" value="Female" /></label>
                     </td>
                 </tr>
             </table>
             </fieldset>
                 
             <fieldset>
-                <legend class="legend_heading">Enquiry</legend>
+                <legend class="legend_heading">ENQUIRY</legend>
                 <br>
                 <table class="contact_table">
                     <!--Gerneral Information-->
@@ -157,6 +175,15 @@
                     </td>
                 </tr>
                 <tr class="tablerow">
+                    <td>
+                        <label>Agree to Marketing:</label>
+                    </td>
+                    <td>
+                        <label>Agree<input type="radio" name="cagree" id="cagree" value="Agreed" checked title="Agree to use your personal information for marketing purposes" /></label>
+                        <label>Decline<input type="radio" name="cagree" id="cdecline" value="Declined" /></label>
+                    </td>
+                </tr>
+                <tr class="tablerow">
                     <td id="comment_label">
                         <label for="comment">Comment:</label>
                     </td>
@@ -164,7 +191,7 @@
                         <textarea name="comment" id="comment" cols="25" rows="12" required placeholder="Please enter Comments" title="Enter your comment please"></textarea>
                     </td>
                 </tr>
-                
+            
                 <tr>
                     <td colspan="2">
                         <div class="errors">
@@ -247,6 +274,7 @@
 
 
                  clocation: "required",
+                 cpostcode: "required",
                  comment: "required",
                  },
 
