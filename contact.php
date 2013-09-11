@@ -96,7 +96,82 @@
       <section class="maincontent">
               
     
-        <form action="http://www.webdesignstudents.co.uk/students/response.php" method="get" class="contact_form" id="contactForm">
+          
+                <!--Mail Script-->
+        <?php
+            if(isset($_POST['submit'])){
+
+                ini_set('SMTP', 'mail.british-study.com');
+
+                $name= $_POST['cname'];
+                $email= $_POST['cemail'];
+                $mobile= $_POST['cmobile'];
+                $location= $_POST['clocation'];
+                $postcode= $_POST['cpostcode'];
+                $gender= $_POST['cgender'];
+                $emailpref= $_POST['emailpref'];
+                $telpref= $_POST['phonepref'];
+                $textpref= $_POST['textpref'];
+                $comment= $_POST['comment']; 
+
+
+                $to= "peterpedro192@gmail.com";
+                $subject= "Web Site Contact for BCAF";
+
+                $headers= "MIME-Version: 1.0 \r\n";
+                $headers.= "Content-type: text/html; charset=utf-8 \r\n";
+                $headers.= "From:".$email."\r\n";
+                
+                
+                 
+
+                            
+                      
+
+                $message= '
+
+                <!DOCTYPE html>
+                <html>
+                    <head>
+                        <title>Wedding Photography Exercise Comment</title>
+                        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+                        <style>
+                            body{
+                                width: 500px;
+                                margin: 0 auto;
+                                background: #EEEEFF;
+                            }
+                        </style>
+                    </head>
+                    <body>
+                        <h1>Contact Form Submission</h1>          
+                        <h2>'.$name.' who is '.$gender.' and lives in '.$location.' at postcode '.$postcode.' has contacted you via your web site and they have commented</h2><h3>'.$comment.'</h3>
+                        <p> '.$name.' prefers to be contacted by</p>
+                            <ul>
+                                <li>Email: '.$emailpref.'</li>
+                                <li>Call: '.$telpref.'</li>
+                                <li>Text: '.$textpref.'</li>
+                            </ul>
+                        <p>Email Address: '.$email.'</p>
+                        <p>Mobile #:'.$mobile.'</p>
+                            
+                    </body>
+                </html>
+
+                ';
+
+                if(mail($to,$subject,$message,$headers)){
+                    echo '<h3>Thank you for your comment.</h3><br>';
+                }else {
+                    echo ',<h3>Sorry, please try again later.</h3><br>';
+                }
+            }
+
+        ?>
+
+          
+          
+        <form action="contact.php" method="post" class="contact_form" id="contactForm">
             <fieldset>
                 <legend class="legend_heading">PERSONAL INFORMATION</legend>
                 <br>

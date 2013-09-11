@@ -42,11 +42,17 @@
                   <div class="sectioncontent">
                       <p>
 
-The festival is intended to run over three days, Friday to Sunday, thus making it easier for families and those who work during the week to attend. It will include many of the events set up for the Lakes festival including: talks, special live drawing events, workshops, films, exhibitions and a kids’ zone. I have also decided to include one element from the Comic-Con International: San Diego: a masquerade day to end the festival, where attendees may elect to dress as their favourite character from the world of comic books and fantasy.                        </p>
+The Brighton Comic Arts Festival (BCAF) is a new festival has been launched to celebrate the very best comic art from across the world, from cartoon strips to superhero comics and manga to non-fiction graphic novels. Whilst the love of the comic book art form is at its base, from its inception, the founders of the show set out to include not only the comic books they loved, but also other aspects of the popular arts that they enjoyed and felt deserved wider recognition,  including films and science fiction/fantasy literature.The inaugural  festival will run from 7-9 July 2014. The festival will be held at various venues throughout Brighton.                        
+                      </p>
+                      <hr>
                       <p>
 
-The festival will consist of several zones, wherein different events are held. The ‘main zone’ will house the major talks, panels, interviews, exhibitions, etc. of the festival. The ‘kids zone’ will feature those activities specifically geared towards those 12 and under. Both the main and kids zones will be housed in the Brighton City Centre. The ‘film zone’ will be where relevant films are screened and will take place at the Duke of York’s Picture House. Finally, the ‘artist zone’ is where the fans will be able to get up close and personal with the writers and artists of comic books in a more intimate setting, these events will be held at Dave’s Comics - the eventual goal is that such events will be expanded to include more comic book and general interest bookstores.er.                    
-                      </p>    
+The BCAF is set to be a three day event and is modelled on the European comic festivals rather than comic conventions that UK audiences are more familiar with. The aim is create an ‘en fete’ atmosphere, making the whole town part of the festival. There will be a much bigger emphasis on the range of talks, special live drawing events, workshops, films, exhibitions and a kids’ zone.  Some of the events, including the exhibitions and the kids’ zone will also be free.         
+                      </p> 
+                      <hr>
+                      <p>
+                         The festival will consist of several zones, wherein different events are held. The ‘main zone’ will house the major talks, panels, interviews, exhibitions, etc. of the festival. The ‘kids zone’ will feature those activities specifically geared towards those 12 and under. Both the main and kids zones will be housed in the Brighton City Centre. The ‘film zone’ will be where relevant films are screened and will take place at the Duke of York’s Picture House. Finally, the ‘artist zone’ is where the fans will be able to get up close and personal with the writers and artists of comic books in a more intimate setting, these events will be held at Dave’s Comics - the eventual goal is that such events will be expanded to include more comic book and general interest bookstores. 
+                      </p>
                   </div>
               </section>
       </section>

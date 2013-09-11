@@ -70,8 +70,11 @@
                   </footer>
                   <div class="sectioncontent">
                       <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc dolor mi, porta non viverra eu, lacinia a dolor.                                   Curabitur vel molestie augue. Suspendisse ultricies velit odio, a hendrerit sapien interdum eu. Vestibulum at quam                               luctus, varius velit quis, suscipit purus. Nam interdum urna id purus ullamcorper porttitor. Suspendisse eros dui,                               dignissim ac libero ac, semper imperdiet tellus. Praesent dictum iaculis mi eget porta. Vivamus vulputate libero ac                              tincidunt tempor. Aenean placerat consectetur ullamcorper.                                                                                                                     
-                      </p>    
+                        For many (myself included) comic books bring us back to a simpler time, where good was good and bad was evil. Where a guy in a bright blue and red suit fighting crime could be seen as a hero rather than a joke. For many adults the comic book rebuffs the idea that you can’t go back again, you start flipping through the pages and you’re a kid again. That sense of nostalgia may help fuel the success of the comic book industry but the notion that comics are just for kids has long since been disproven.                                                                                                                    
+                      </p>
+                      <p>
+                          The idea of what constitutes a comic book has expanded beyond all recognition. The genres of comic books span the same as any other form of written work. There are comics that focus on normal people facing everyday problems, there are superhero comics, there are dark dystopian dramas set in the superhero world, there are comics set in the realm of magical realism, and on and on.
+                      </p>
                   </div>
               </section>
               <section class="bottomsection">
@@ -83,8 +86,12 @@
                   </footer>
                   <div class="sectioncontent">
                       <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc dolor mi, porta non viverra eu, lacinia a dolor.                                   Curabitur vel molestie augue. Suspendisse ultricies velit odio, a hendrerit sapien interdum eu. Vestibulum at quam                               luctus, varius velit quis, suscipit purus. Nam interdum urna id purus ullamcorper porttitor. Suspendisse eros dui,                               dignissim ac libero ac, semper imperdiet tellus. Praesent dictum iaculis mi eget porta. Vivamus vulputate libero ac                              tincidunt tempor. Aenean placerat consectetur ullamcorper.                                                                                                                     
-                      </p>    
+                         The influence of comics on popular culture is not quantifiable. One only need to look at the movie industry box office to see the massive impact of the comic book industry: The Avengers, Thor, Batman, Superman, the list goes on. These symbols have not merely endured, they have thrived in the modern world. As the world around us becomes ever more complicated these symbols of good seem to gain more relevance over time.
+                                                                                                                     
+                      </p>
+                      <p>
+                          As the scope of the comic book industry has grown so too has the range of its creators. The comic book industry now attracts some of the finest artists, both graphic artists and writers, in the world. Writers such as Terry Pratchett (Discworld), Alan Moore (From Hell, V for Vendetta, Watchmen) and Neil Gaiman (The Sandman, Stardust, Coraline, American Gods) are considered some of the finest writers, not just comic book writers, but writers, in the world. And all of these writers are British. So what better time to introduce a comic arts festival to one of the U.K.’s most artistic cities: Brighton?
+                      </p>
                   </div>
               </section>
       </section>
@@ -94,14 +101,14 @@
               <section>
                   <h2>Stan Lee</h2>
                   <img src="assets/media/img/Stan_Lee.jpg" alt="Comics Writer Stan Lee" />
-                  <p>tempor. Aenean placerat consectetur ullamcorper.</p>
+                  <p>Legendary creator of such icons as Spiderman, Thor and the X-Men!</p>
               </section>
           </aside>
           <aside class="bottomsidebar">
               <section>
                   <h2>Geoff Johns</h2>
                   <img src="assets/media/img/Geoff_Johns.jpg" alt="Comics Writer Geoff Johns" />
-                  <p>tempor. Aenean placerat consectetur ullamcorper.</p>
+                  <p>Celebrated writer of Justice League of America and Batman!</p>
               </section>
           </aside>
       </section>

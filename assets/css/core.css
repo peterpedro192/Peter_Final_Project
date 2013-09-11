@@ -18,7 +18,7 @@
     font: 1em sans-serif;
     max-width: 30em;
     margin: 0 auto;
-    line-height: 1.25em;
+    line-height: 1.5em;
     background-color: #Fff;
 
     
@@ -122,6 +122,10 @@ div.slideshow p img{
     padding: 1em 0 1em 0;
     text-align: justify;
     margin: 0 0 5em 0;
+}
+
+.maincontent p{
+    padding-bottom: 1em;
 }
 
 /*Styling for sections*/
