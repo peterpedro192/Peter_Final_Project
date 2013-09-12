@@ -101,7 +101,7 @@
         <?php
             if(isset($_POST['submit'])){
 
-                ini_set('SMTP', 'mail.british-study.com');
+                
 
                 $name= $_POST['cname'];
                 $email= $_POST['cemail'];
@@ -133,7 +133,7 @@
                 <!DOCTYPE html>
                 <html>
                     <head>
-                        <title>Wedding Photography Exercise Comment</title>
+                        <title>BCAF USER COMMENT</title>
                         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
                         <style>
                             body{
